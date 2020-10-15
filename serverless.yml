@@ -1,0 +1,22 @@
+serverless-next-github-issue:
+  component: "@sls-next/serverless-component@1.18.0-alpha.7"
+  inputs:
+    bucketRegion: eu-west-1
+    build:
+      cmd: yarn
+    cloudfront:
+      priceClass: "PriceClass_100"
+      defaults:
+        forward:
+          headers:
+            [
+              Authorization,
+              Host
+            ]
+      # _next/data/*:
+      #   forward:
+      #     headers:
+      #       [
+      #         Authorization,
+      #         Host
+      #       ]

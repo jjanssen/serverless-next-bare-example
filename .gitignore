@@ -1,0 +1,12 @@
+.DS_Store
+.env.local
+
+.serverless/
+.serverless_nextjs/
+.next/
+.npm/
+
+node_modules/
+
+Makefile
+serverless.local.yml

@@ -1,5 +1,5 @@
 serverless-next-github-issue:
-  component: "@sls-next/serverless-component@1.18.0-alpha.7"
+  component: "@sls-next/serverless-component@1.18.0-alpha.10"
   inputs:
     bucketRegion: eu-west-1
     build:
@@ -13,10 +13,10 @@ serverless-next-github-issue:
               Authorization,
               Host
             ]
-      # _next/data/*:
-      #   forward:
-      #     headers:
-      #       [
-      #         Authorization,
-      #         Host
-      #       ]
+      _next/data/*:
+        forward:
+          headers:
+            [
+              Authorization,
+              Host
+            ]

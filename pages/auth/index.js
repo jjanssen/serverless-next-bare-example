@@ -6,4 +6,8 @@ function Home() {
   );
 }
 
+export const getServerSideProps = () => {
+  return { props: {} };
+};
+
 export default Home;
